@@ -1,0 +1,203 @@
+/*global*/
+
+html{
+    font-size: 62.5%;/* 10px = 1rem*/
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.4rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+}
+
+/*main*/
+main{
+    width:60%;
+    margin-right:2rem;
+}
+/*utilities*/
+.flex-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+.flex-header-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.btn{
+    display: block;
+    font-size: 1.6rem;
+    background-color: orangered;
+    padding: 1rem;
+    text-align: center;
+    margin:1rem 0;
+}
+@media(max-width:768px) {
+    .flex-header{
+        flex-direction: column;
+    }
+    .flex-header-v{
+        height: 20vh;
+        text-align: center;
+    }
+    .flex-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*headers*/
+.site-init{
+    background-image: url(./img/header.jpg);
+    background-size: cover;
+    height:40vh;
+    color:white;
+    font-weight: bold;
+}
+.menu a{
+    margin-right: 2rem;
+}
+.site-init p{
+    font-size: 2rem;
+}
+.site-second{
+    background-color: black;
+    color: white;
+}
+@media(max-width:768px){
+    .site-init{
+        height: 22vh;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
+}
+.blog-page{
+    text-align: center;
+    font-size: 4rem;
+
+}
+/*about us*/
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+@media(max-width:768px){
+    .flex-about{
+
+        flex-direction: column;
+    }
+} 
+.other-pages{
+background-image: url(./img/highlight.jpg);
+
+height:40vh;
+color:white;
+font-weight: bold;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.blog{
+    background-image: url(./img/destacada3.jpg);
+    background-size: auto;
+    color: white;
+}
+.main-header{
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+.main-body{
+    text-align: right;
+}
+/*house item*/
+.house-item{
+    background-color: #dedede;
+    width: 40rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.house-item-text-container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price{
+    color: green;
+font-weight: bold;
+}
+/*contact form*/
+fieldset{
+    padding: 1rem;
+}
+legend,label,input{
+font-size: 1.6rem;
+}
+.input-container label{
+    display: inline-block;
+    width: 10rem;
+text-align: right;
+margin-right: 1rem;
+}
+.input-container{
+    margin: 1rem;
+}
+
+.input-container input, .input-container textarea{
+    width:70%;
+    background-color: #dedede;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+
+}
+.options-container{
+    width:70%;
+    background-color: #dedede;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem; 
+}
+/*main*/
+.about{
+    align-items: center;
+    }
+/*footer*/
+.send-container{
+background-color: green;
+width: 5rem; 
+text-align: center;
+padding: 1.5rem;
+margin: top 1.5rem;
+}
